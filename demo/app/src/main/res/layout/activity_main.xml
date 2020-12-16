@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_single"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="单例线程池使用"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_factory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="工厂模式之简单工厂"
+            app:layout_constraintTop_toBottomOf="@id/btn_single" />
+
+        <Button
+            android:id="@+id/btn_factory2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="工厂模式之抽象工厂"
+            app:layout_constraintTop_toBottomOf="@id/btn_factory" />
+
+        <Button
+            android:id="@+id/btn_factory3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="简单工厂+线程池"
+            app:layout_constraintTop_toBottomOf="@id/btn_factory2" />
+
+        <Button
+            android:id="@+id/btn_video"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="视频播放"
+            app:layout_constraintTop_toBottomOf="@id/btn_factory3" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
